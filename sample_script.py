@@ -3,6 +3,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
+from selenium.webdriver.support.wait import WebDriverWait
+driver.wait = WebDriverWait(driver, 5)
+
 
 # get the path to the ChromeDriver executable
 driver_path = ChromeDriverManager().install()
